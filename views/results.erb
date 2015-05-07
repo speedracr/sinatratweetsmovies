@@ -1,0 +1,13 @@
+<div class="container">
+	<div class="content" 
+		style="background: url(<%= @img_url %>) no-repeat">
+	<div class="tweets"> 
+			<% @tweet.each do |result| %>
+		<p class="singletweet"><%= result %></p>
+	<% end %>	
+	</div>
+
+	<div class="movietitle">#<%= @movietitle.downcase %></div>
+	<!-- <p> <img class="tmdbimage" src="http://image.tmdb.org/t/p/original/2blmxp2pr4BhwQr74AdCfwgfMOb.jpg" alt="">	 </p> -->
+	</div> <!-- end content -->
+</div> <!-- end container -->

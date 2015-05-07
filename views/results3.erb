@@ -1,0 +1,10 @@
+<!-- <p> <%= params.inspect %> </p> -->
+
+<p> 
+	<% @tweet.each do |result| %>
+	<p class="singletweet"><%= result %></p>
+	<% end %>
+</p>
+
+<p class="movietitle">	<%= @movietitle %> </p>
+<p> <img class="tmdbimage" src="<%= @img_url %>" alt="">	 </p>
